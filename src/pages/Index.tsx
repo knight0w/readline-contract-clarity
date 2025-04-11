@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Readline - Understand Contracts Instantly";
+    document.title = "Readline - Music Contract Analysis Made Simple";
   }, []);
 
   return (
