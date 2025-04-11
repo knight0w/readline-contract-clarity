@@ -10,12 +10,15 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/lovable-uploads/ea977371-8a03-4a25-b44c-9ff0cfc1f95a.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
+          backgroundColor: "#000000", // Black background to ensure no white edges
         }}
-      ></div>
+      >
+        <img 
+          src="/lovable-uploads/8a30a44d-518d-4a3d-9a2e-c0e557a21039.png" 
+          alt="AI brain visualization" 
+          className="w-full h-full object-cover"
+        />
+      </div>
       
       {/* Darker overlay to ensure text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
