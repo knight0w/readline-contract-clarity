@@ -6,18 +6,19 @@ import { ArrowDown } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
-      {/* Background image */}
+      {/* Background image with proper styling */}
       <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ 
+        className="absolute inset-0 z-0"
+        style={{
           backgroundImage: "url('/lovable-uploads/ea977371-8a03-4a25-b44c-9ff0cfc1f95a.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center" 
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
         }}
       ></div>
       
-      {/* Overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+      {/* Darker overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
       
       {/* Content container */}
       <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-20 pt-20">
@@ -36,8 +37,8 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-gray-200 mb-8 max-w-lg mx-auto lg:mx-0">
-              AI-powered contract assistant designed specifically for music professionals. 
-              Helping artists, songwriters, producers, and labels navigate complex legal documents.
+              AI-powered contract assistant designed for professionals. 
+              Helping you navigate complex legal documents with confidence.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

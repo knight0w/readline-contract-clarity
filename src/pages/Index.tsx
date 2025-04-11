@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Update document title
-    document.title = "Readline - Music Contract Analysis Made Simple";
+    // Update document title with Coming Soon
+    document.title = "Readline - Contract Analysis Made Simple | Coming Soon";
   }, []);
 
   return (
