@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { MessageSquare, Send, Upload } from 'lucide-react';
+import { MessageSquare, Send, Upload as UploadIcon } from 'lucide-react';
 
 const Upload = () => {
   return (
@@ -69,7 +68,7 @@ const Upload = () => {
       <div className="border-t border-gray-800 bg-readline-darker p-4">
         <div className="container flex gap-4 items-center">
           <Button variant="outline" className="border-gray-700">
-            <Upload className="mr-2 h-4 w-4" />
+            <UploadIcon className="mr-2 h-4 w-4" />
             Upload File
           </Button>
           <div className="flex-1 relative">
