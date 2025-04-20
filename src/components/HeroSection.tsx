@@ -5,7 +5,7 @@ import { ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center">
       {/* Background image with proper styling */}
       <div 
         className="absolute inset-0 z-0"
@@ -23,8 +23,8 @@ const HeroSection = () => {
       {/* Darker overlay to ensure text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
       
-      {/* Content container - adjusted with more padding top to move content lower */}
-      <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-20 pt-40">
+      {/* Content container - centered vertically */}
+      <div className="container mx-auto px-4 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left column - Empty space for image background */}
           <div className="flex justify-center lg:justify-end order-2 lg:order-1">
@@ -77,3 +77,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
