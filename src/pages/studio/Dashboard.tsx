@@ -3,19 +3,22 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Upload, FileText, BarChart } from 'lucide-react';
+import { Upload, BarChart, LineChart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import RecentDocumentTable from '@/components/studio/RecentDocumentTable';
 import StatCard from '@/components/studio/StatCard';
 
 const Dashboard = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-semibold">Dashboard</h1>
+        <div>
+          <h1 className="text-3xl font-semibold text-white">Welcome back, John</h1>
+          <p className="text-gray-400 mt-1">Here's what's happening with your documents.</p>
+        </div>
         <div className="flex gap-3">
           <Button asChild>
-            <Link to="/studio/upload">
+            <Link to="/studio/upload" className="bg-readline-teal text-readline-dark hover:bg-readline-teal/90">
               <Upload className="mr-2" size={18} />
               Upload Document
             </Link>
@@ -23,59 +26,53 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <StatCard 
-          title="Documents Analyzed" 
-          value="42" 
-          change="+8" 
-          trend="up" 
-          icon={<FileText className="text-readline-teal" />} 
+          title="Documents Analyzed"
+          value="1,415"
+          change="+89"
+          trend="up"
+          icon={<LineChart className="text-readline-teal" />}
         />
-        
         <StatCard 
-          title="Money Saved" 
-          value="$12,450" 
-          change="+$3,200" 
-          trend="up" 
-          icon={<BarChart className="text-readline-teal" />} 
+          title="Money Saved"
+          value="$24,500"
+          change="+$3,840"
+          trend="up"
+          icon={<BarChart className="text-readline-teal" />}
         />
-        
         <StatCard 
-          title="Royalty Improvement" 
-          value="15%" 
-          change="+3%" 
-          trend="up" 
-          icon={<BarChart className="text-readline-teal" />} 
+          title="Success Rate"
+          value="52%"
+          change="+5%"
+          trend="up"
+          icon={<BarChart className="text-readline-teal" />}
+          className="glass-gradient"
         />
       </div>
 
-      <Card className="bg-readline-dark border-gray-800">
-        <CardHeader className="border-b border-gray-800">
-          <CardTitle className="text-xl text-white">Recent Documents</CardTitle>
-        </CardHeader>
-        <CardContent className="pt-6">
-          <Tabs defaultValue="all" className="w-full">
-            <TabsList className="mb-6">
-              <TabsTrigger value="all">All Documents</TabsTrigger>
-              <TabsTrigger value="record">Record Deals</TabsTrigger>
-              <TabsTrigger value="publishing">Publishing</TabsTrigger>
-              <TabsTrigger value="management">Management</TabsTrigger>
-            </TabsList>
-            <TabsContent value="all">
-              <RecentDocumentTable />
-            </TabsContent>
-            <TabsContent value="record">
-              <RecentDocumentTable filter="record" />
-            </TabsContent>
-            <TabsContent value="publishing">
-              <RecentDocumentTable filter="publishing" />
-            </TabsContent>
-            <TabsContent value="management">
-              <RecentDocumentTable filter="management" />
-            </TabsContent>
-          </Tabs>
-        </CardContent>
-      </Card>
+      <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
+        <Card className="bg-readline-dark border-gray-800">
+          <CardHeader className="border-b border-gray-800">
+            <CardTitle className="text-xl text-white">Recent Activity</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <RecentDocumentTable limit={5} />
+          </CardContent>
+        </Card>
+
+        <Card className="bg-readline-dark border-gray-800">
+          <CardHeader className="border-b border-gray-800">
+            <CardTitle className="text-xl text-white">Contract Analysis</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="h-[300px] flex items-center justify-center">
+              {/* Placeholder for chart */}
+              <div className="text-gray-500">Chart coming soon</div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 };
