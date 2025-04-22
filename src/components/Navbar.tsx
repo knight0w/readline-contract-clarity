@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,8 +43,9 @@ const Navbar = () => {
           </a>
           <Button
             className="bg-readline-teal hover:bg-readline-teal-dark text-readline-dark font-medium px-6"
+            asChild
           >
-            Try Readline Free
+            <Link to="/studio">Try Readline Free</Link>
           </Button>
         </div>
 
@@ -86,8 +88,9 @@ const Navbar = () => {
             </a>
             <Button
               className="bg-readline-teal hover:bg-readline-teal-dark text-readline-dark font-medium w-full"
+              asChild
             >
-              Try Readline Free
+              <Link to="/studio" onClick={() => setIsMobileMenuOpen(false)}>Try Readline Free</Link>
             </Button>
           </div>
         </div>
@@ -97,3 +100,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

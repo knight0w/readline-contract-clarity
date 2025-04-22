@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -48,8 +48,9 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-readline-teal hover:bg-readline-teal-dark text-readline-dark text-lg font-medium px-8 box-glow"
+                asChild
               >
-                Coming Soon
+                <Link to="/studio">Coming Soon</Link>
               </Button>
               
               <Button 
@@ -77,4 +78,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
