@@ -26,45 +26,37 @@ const PreviewSection = () => {
           </div>
           
           <div className="flex flex-col md:flex-row">
-            {/* Document panel */}
             <div className="flex-1 p-6 border-r border-readline-teal/20">
               <div className="text-sm mb-4 text-gray-400">ArtistName.ProducerName.Son......025.docx</div>
               
               <div className="space-y-4">
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Advance</span>: Employer shall pay an Advance to Producer, <span className="line-through text-red-400">100% non-recoupable</span> from Producer's Royalties payable hereunder (excluding mechanical royalties) in the amount of <span className="line-through text-red-400">One Thousand Five Hundred ($1,500)</span> Four Thousand ($4000) Dollars. The Advance shall be paid promptly upon the complete execution of this Agreement.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Advance</span>: Employer shall pay an Advance to Producer, non-recoupable from Producer's Royalties payable hereunder (excluding mechanical royalties) in the amount of <span className="line-through text-red-400">One Thousand Five Hundred ($1,500)</span> <span className="text-green-400">Four Thousand ($4,000)</span> Dollars. The Advance shall be paid promptly upon the complete execution of this Agreement.
                   </p>
                 </div>
                 
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Royalty</span>: Employer shall pay to Producer <span className="line-through text-red-400">Two percent (2%)</span> Ten percent (10%) of Employer's net receipts on all commercial exploitations and licenses of the Master by any and all methods and means, whether now known or hereafter devised, in any and all media through the world in perpetuity in connection with audio embodying the Master.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Royalty</span>: Employer shall pay to Producer <span className="line-through text-red-400">Two percent (2%)</span> <span className="text-green-400">Ten percent (10%)</span> of Employer's net receipts on all commercial exploitations and licenses of the Master by any and all methods and means, whether now known or hereafter devised, in any and all media through the world in perpetuity in connection with audio embodying the Master.
                   </p>
                 </div>
                 
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Credit</span>: Producer shall receive credit in substantially the following form: "Produced by [Producer Name]" on all configurations of the Master and in all promotional materials where production credits are customarily provided.
-                  </p>
-                </div>
-                
-                <div className="relative">
-                  <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Rights</span>: All rights in and to the Master, including the underlying musical composition and sound recording, shall be the sole property of Employer throughout the world in perpetuity, including all copyrights therein.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Credit</span>: <span className="line-through text-red-400">If possible,</span> Producer shall <span className="text-green-400">always</span> receive credit in substantially the following form: "Produced by [Producer Name]" on all configurations of the Master and in all promotional materials where production credits are customarily provided.
                   </p>
                 </div>
               </div>
             </div>
             
-            {/* Analysis panel */}
             <div className="w-full md:w-[300px] p-6 bg-readline-darker/50">
               <h3 className="text-readline-teal text-lg font-medium mb-4">AI Analysis</h3>
               
               <div className="space-y-4">
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
                   <div className="text-readline-teal text-sm font-medium mb-1">Advance</div>
-                  <p className="text-xs text-gray-300">Increased advance payment from $1,500 to $4,000, removed non-recoupable clause.</p>
+                  <p className="text-xs text-gray-300">Increased advance payment from $1,500 to $4,000, maintained non-recoupable clause.</p>
                 </div>
                 
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
@@ -74,12 +66,7 @@ const PreviewSection = () => {
                 
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
                   <div className="text-readline-teal text-sm font-medium mb-1">Credit</div>
-                  <p className="text-xs text-gray-300">Standard producer credit clause with prominent placement requirements.</p>
-                </div>
-                
-                <div className="p-3 bg-readline-dark/60 rounded-lg">
-                  <div className="text-readline-teal text-sm font-medium mb-1">Rights</div>
-                  <p className="text-xs text-gray-300">Full ownership and copyright transfer to Employer.</p>
+                  <p className="text-xs text-gray-300">Strengthened credit clause by removing conditional language and ensuring mandatory credit.</p>
                 </div>
               </div>
             </div>
