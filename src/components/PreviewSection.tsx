@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -29,24 +28,32 @@ const PreviewSection = () => {
           <div className="flex flex-col md:flex-row">
             {/* Document panel */}
             <div className="flex-1 p-6 border-r border-readline-teal/20">
-              <div className="text-sm mb-4 text-gray-400">Employment Agreement.pdf</div>
+              <div className="text-sm mb-4 text-gray-400">ArtistName.ProducerName.Son......025.docx</div>
               
               <div className="space-y-4">
-                <p className="text-sm">
-                  This <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Employment Agreement</span> (the "Agreement") is entered into as of [Date] by and between [Employer Name], a [State] corporation ("Employer"), and [Employee Name] ("Employee").
-                </p>
+                <div className="relative">
+                  <p className="text-sm">
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Advance</span>: Employer shall pay an Advance to Producer, <span className="line-through text-red-400">100% non-recoupable</span> from Producer's Royalties payable hereunder (excluding mechanical royalties) in the amount of <span className="line-through text-red-400">One Thousand Five Hundred ($1,500)</span> Four Thousand ($4000) Dollars. The Advance shall be paid promptly upon the complete execution of this Agreement.
+                  </p>
+                </div>
                 
-                <p className="text-sm">
-                  <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Term of Employment</span>. Employee's employment under this Agreement shall commence on [Start Date] and continue until terminated pursuant to Section 5 of this Agreement.
-                </p>
+                <div className="relative">
+                  <p className="text-sm">
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Royalty</span>: Employer shall pay to Producer <span className="line-through text-red-400">Two percent (2%)</span> Ten percent (10%) of Employer's net receipts on all commercial exploitations and licenses of the Master by any and all methods and means, whether now known or hereafter devised, in any and all media through the world in perpetuity in connection with audio embodying the Master.
+                  </p>
+                </div>
                 
-                <p className="text-sm">
-                  <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Compensation</span>. As compensation for the services to be rendered by Employee, Employer shall pay Employee an annual salary of [Salary Amount] ("Base Salary"), payable in accordance with Employer's normal payroll practices.
-                </p>
+                <div className="relative">
+                  <p className="text-sm">
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Credit</span>: Producer shall receive credit in substantially the following form: "Produced by [Producer Name]" on all configurations of the Master and in all promotional materials where production credits are customarily provided.
+                  </p>
+                </div>
                 
-                <p className="text-sm">
-                  <span className="bg-yellow-500/20 text-yellow-400 px-1 rounded">Non-Compete Clause</span>. During the term of employment and for a period of [Time Period] following termination of employment, Employee shall not directly or indirectly engage in any business that competes with Employer.
-                </p>
+                <div className="relative">
+                  <p className="text-sm">
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Rights</span>: All rights in and to the Master, including the underlying musical composition and sound recording, shall be the sole property of Employer throughout the world in perpetuity, including all copyrights therein.
+                  </p>
+                </div>
               </div>
             </div>
             
@@ -56,23 +63,23 @@ const PreviewSection = () => {
               
               <div className="space-y-4">
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
-                  <div className="text-readline-teal text-sm font-medium mb-1">Employment Agreement</div>
-                  <p className="text-xs text-gray-300">Standard employment agreement structure identifying parties and purpose.</p>
+                  <div className="text-readline-teal text-sm font-medium mb-1">Advance</div>
+                  <p className="text-xs text-gray-300">Increased advance payment from $1,500 to $4,000, removed non-recoupable clause.</p>
                 </div>
                 
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
-                  <div className="text-readline-teal text-sm font-medium mb-1">Term of Employment</div>
-                  <p className="text-xs text-gray-300">Open-ended employment term with reference to termination conditions in Section 5.</p>
+                  <div className="text-readline-teal text-sm font-medium mb-1">Royalty</div>
+                  <p className="text-xs text-gray-300">Significant increase in royalty rate from 2% to 10% of net receipts.</p>
                 </div>
                 
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
-                  <div className="text-readline-teal text-sm font-medium mb-1">Compensation</div>
-                  <p className="text-xs text-gray-300">Defines base salary payment structure and schedule.</p>
+                  <div className="text-readline-teal text-sm font-medium mb-1">Credit</div>
+                  <p className="text-xs text-gray-300">Standard producer credit clause with prominent placement requirements.</p>
                 </div>
                 
                 <div className="p-3 bg-readline-dark/60 rounded-lg">
-                  <div className="text-yellow-400 text-sm font-medium mb-1">⚠️ Non-Compete Clause</div>
-                  <p className="text-xs text-gray-300">Potentially restrictive clause. Consider limiting scope by geography or specific industry.</p>
+                  <div className="text-readline-teal text-sm font-medium mb-1">Rights</div>
+                  <p className="text-xs text-gray-300">Full ownership and copyright transfer to Employer.</p>
                 </div>
               </div>
             </div>
