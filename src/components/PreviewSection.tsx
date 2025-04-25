@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -32,19 +33,19 @@ const PreviewSection = () => {
               <div className="space-y-4">
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Advance</span>: Employer shall pay an Advance to Producer, non-recoupable from Producer's Royalties payable hereunder (excluding mechanical royalties) in the amount of <span className="line-through text-red-400">One Thousand Five Hundred ($1,500)</span> <span className="text-green-400">Four Thousand ($4,000)</span> Dollars. The Advance shall be paid promptly upon the complete execution of this Agreement.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Advance</span>: Employer shall pay an Advance to Producer, non-recoupable from Producer's Royalties payable hereunder (excluding mechanical royalties) in the amount of <span className="line-through text-red-400">One Thousand Five Hundred ($1,500)</span> <span className="text-readline-teal">Four Thousand ($4,000) Dollars</span>. The Advance shall be paid promptly upon the complete execution of this Agreement.
                   </p>
                 </div>
                 
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Royalty</span>: Employer shall pay to Producer <span className="line-through text-red-400">Two percent (2%)</span> <span className="text-green-400">Ten percent (10%)</span> of Employer's net receipts on all commercial exploitations and licenses of the Master by any and all methods and means, whether now known or hereafter devised, in any and all media through the world in perpetuity in connection with audio embodying the Master.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Royalty</span>: Employer shall pay to Producer <span className="line-through text-red-400">Two percent (2%)</span> <span className="text-readline-teal">Ten percent (10%)</span> of Employer's net receipts on all commercial exploitations and licenses of the Master by any and all methods and means, whether now known or hereafter devised, in any and all media through the world in perpetuity in connection with audio embodying the Master.
                   </p>
                 </div>
                 
                 <div className="relative">
                   <p className="text-sm">
-                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Credit</span>: <span className="line-through text-red-400">If possible,</span> Producer shall <span className="text-green-400">always</span> receive credit in substantially the following form: "Produced by [Producer Name]" on all configurations of the Master and in all promotional materials where production credits are customarily provided.
+                    <span className="bg-readline-teal/20 text-readline-teal px-1 rounded">Credit</span>: <span className="line-through text-red-400">If possible,</span> Producer shall <span className="text-readline-teal">always</span> receive credit in substantially the following form: "Produced by [Producer Name]" on all configurations of the Master and in all promotional materials where production credits are customarily provided.
                   </p>
                 </div>
               </div>
