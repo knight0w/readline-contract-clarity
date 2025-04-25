@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
@@ -34,14 +35,14 @@ const HeroSection = () => {
           {/* Right column - Text and CTA */}
           <div className="flex flex-col text-center lg:text-left order-1 lg:order-2 animate-fade-in">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-              <div>Understand</div>
-              <div>Contracts</div>
-              <div>Instantly</div>
+              <div>Understand,</div>
+              <div>Edit,</div>
+              <div>Redline.</div>
             </h1>
             
             <p className="text-xl text-gray-200 mb-8 max-w-lg mx-auto lg:mx-0">
-              AI-powered contract assistant designed for professionals. 
-              Helping you navigate complex legal documents with confidence.
+              AI-powered contract assistant designed for the creative professional. 
+              Helping you navigate contract negotiations in the entertainment industry.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
