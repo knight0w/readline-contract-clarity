@@ -55,12 +55,17 @@ const documents = [
 
 interface RecentDocumentTableProps {
   filter?: string;
+  limit?: number;
 }
 
-const RecentDocumentTable = ({ filter }: RecentDocumentTableProps) => {
+const RecentDocumentTable = ({ filter, limit }: RecentDocumentTableProps) => {
   const filteredDocuments = filter 
     ? documents.filter(doc => doc.type === filter)
     : documents;
+    
+  const limitedDocuments = limit 
+    ? filteredDocuments.slice(0, limit) 
+    : filteredDocuments;
 
   return (
     <div className="rounded-md overflow-hidden border border-gray-800">
@@ -76,7 +81,7 @@ const RecentDocumentTable = ({ filter }: RecentDocumentTableProps) => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {filteredDocuments.map((doc) => (
+          {limitedDocuments.map((doc) => (
             <TableRow key={doc.id} className="hover:bg-gray-900 border-gray-800">
               <TableCell>
                 <Link to={`/studio/analysis/${doc.id}`} className="font-medium text-readline-teal hover:underline">

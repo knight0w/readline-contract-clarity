@@ -9,11 +9,12 @@ interface StatCardProps {
   change: string;
   trend: 'up' | 'down' | 'neutral';
   icon?: React.ReactNode;
+  className?: string;
 }
 
-const StatCard = ({ title, value, change, trend, icon }: StatCardProps) => {
+const StatCard = ({ title, value, change, trend, icon, className }: StatCardProps) => {
   return (
-    <Card className="bg-readline-dark border-gray-800">
+    <Card className={`bg-readline-dark border-gray-800 ${className || ''}`}>
       <CardContent className="pt-6">
         <div className="flex justify-between">
           <div>
