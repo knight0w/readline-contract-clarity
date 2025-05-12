@@ -16,16 +16,16 @@ const TermsOverviewCard = () => {
   ];
 
   return (
-    <Card className="bg-readline-dark border-gray-800">
-      <CardHeader className="border-b border-gray-800">
-        <CardTitle className="text-lg text-white">Average Key Terms</CardTitle>
+    <Card className="bg-readline-dark/80 border-gray-800/50 shadow-lg">
+      <CardHeader className="border-b border-gray-800/50 py-3 px-4">
+        <CardTitle className="text-sm font-medium text-white">Average Key Terms</CardTitle>
       </CardHeader>
-      <CardContent className="pt-6">
-        <div className="grid grid-cols-2 gap-6">
+      <CardContent className="p-4">
+        <div className="grid grid-cols-2 gap-4">
           {terms.map((term, index) => (
-            <div key={index} className="space-y-1">
-              <p className="text-gray-400 text-xs">{term.label}</p>
-              <p className="text-xl font-semibold text-white">{term.value}</p>
+            <div key={index} className="space-y-0.5">
+              <p className="text-gray-400 text-[10px]">{term.label}</p>
+              <p className="text-base font-semibold text-white">{term.value}</p>
             </div>
           ))}
         </div>

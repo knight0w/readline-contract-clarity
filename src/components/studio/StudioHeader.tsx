@@ -1,29 +1,20 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Search } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { HelpCircle } from 'lucide-react';
 
 const StudioHeader = () => {
   return (
-    <header className="border-b border-gray-800 bg-readline-dark p-4">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4 flex-1">
-          <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-            <Input 
-              className="pl-10 bg-gray-800 border-gray-700 text-white" 
-              placeholder="Search contracts, clauses, artists..." 
-            />
-          </div>
-        </div>
-        <div className="flex items-center gap-3">
-          <Button variant="outline" className="border-readline-teal text-readline-teal">
+    <header className="border-b border-gray-800/50 bg-readline-dark/80 py-3 px-4">
+      <div className="flex items-center justify-end">
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" className="h-7 text-xs text-gray-400 hover:text-white">
+            <HelpCircle className="mr-1" size={14} />
             Help
           </Button>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-readline-teal flex items-center justify-center">
-              <span className="font-medium text-readline-dark">JD</span>
+            <div className="w-7 h-7 rounded-full bg-readline-teal flex items-center justify-center">
+              <span className="font-medium text-readline-dark text-xs">JD</span>
             </div>
           </div>
         </div>
