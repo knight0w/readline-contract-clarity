@@ -30,6 +30,7 @@ const App = () => (
             <Route path="analysis/:id" element={<Analysis />} />
             <Route path="editor/:id" element={<Editor />} />
             <Route path="contracts" element={<Dashboard />} /> {/* Temporary redirect */}
+            <Route path="draft" element={<Dashboard />} /> {/* Temporary redirect, will be implemented later */}
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
