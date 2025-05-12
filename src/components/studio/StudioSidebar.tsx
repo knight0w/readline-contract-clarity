@@ -38,7 +38,7 @@ const StudioSidebar = () => {
     <aside className="w-64 border-r border-gray-800 bg-readline-dark/95 glass flex flex-col">
       <div className="p-5 border-b border-gray-800">
         <Link to="/studio" className="flex items-center">
-          <img src="/lovable-uploads/d58b1558-7267-40ca-83d0-2bf71020aa1f.png" alt="Readline" className="h-8" />
+          <span className="text-2xl font-bold text-white tracking-wider">READLINE</span>
         </Link>
       </div>
       <nav className="flex-1 pt-5">
