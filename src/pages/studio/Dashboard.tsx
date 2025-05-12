@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Input } from '@/components/ui/input';
 import { Upload, BarChart, LineChart, Search, FileText, FilePlus, ClockIcon, Settings, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Badge } from '@/components/ui/badge'; // Added missing Badge import
 import RecentDocumentTable from '@/components/studio/RecentDocumentTable';
 import StatCard from '@/components/studio/StatCard';
 import ContractRiskChart from '@/components/studio/ContractRiskChart';
